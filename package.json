@@ -1,0 +1,23 @@
+{
+  "name": "asr-active-state-watcher",
+  "version": "1.0.0",
+  "description": "Waches an abstract-state-router and calls your function with all active DOM APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TehShrike/asr-active-state-watcher.git"
+  },
+  "keywords": [
+    "abstract-state-router",
+    "browserify"
+  ],
+  "author": "TehShrike",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/TehShrike/asr-active-state-watcher/issues"
+  },
+  "homepage": "https://github.com/TehShrike/asr-active-state-watcher#readme"
+}
