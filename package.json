@@ -4,8 +4,8 @@
   "description": "Waches an abstract-state-router and calls your function with all active DOM APIs",
   "main": "es5.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify . --standalone=\"state-router-redux-ractive\" -o es5.js"
+    "test": "echo \"Error: no test specified :-(\" && exit 0",
+    "build": "babel index.js --presets es2015 --out-file es5.js"
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/TehShrike/asr-active-state-watcher#readme",
   "devDependencies": {
-    "babel-preset-es2015": "6.5.0",
-    "babelify": "7.2.0"
+    "babel-cli": "6.5.1",
+    "babel-preset-es2015": "6.5.0"
   },
   "jsnext:main": "index.js",
   "browser": "index.js",
