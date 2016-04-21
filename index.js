@@ -8,8 +8,11 @@ module.exports = function magicalDomThingy(stateRouter) {
 		currentAttachListeners.forEach(fn => fn(domApi))
 	}
 
-	function detachFromState({ state }) {
-		currentDetachListeners.forEach(fn => fn(currentDomApis[state.name]))
+	function detachFromState({ state, domApi }) {
+		if (!currentDomApis[state.name]) {
+			console.error('detaching, but no current dom api for that name was found')
+		}
+		currentDetachListeners.forEach(fn => fn(domApi))
 		delete currentDomApis[state.name]
 	}
 
