@@ -1,6 +1,6 @@
 {
   "name": "asr-active-state-watcher",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Waches an abstract-state-router and calls your function with all active DOM APIs",
   "main": "es5.js",
   "scripts": {
