@@ -1,4 +1,4 @@
-module.exports = function magicalDomThingy(stateRouter) {
+module.exports = function createStateWatcher(stateRouter) {
 	const currentDomApis = {}
 	const currentAttachListeners = []
 	const currentDetachListeners = []

@@ -10,11 +10,11 @@ Your callbacks will be passed one argument: the DOM API object for the state.
 
 const stateWatcher = makeAsrStateWatcher(stateRouter)
 
-const removeAttachListener = magicalDomThingy.addDomApiAttachListener(domApi => {
+const removeAttachListener = stateWatcher.addDomApiAttachListener(domApi => {
 	domApi.get() // the starting state, probably!
 })
 
-const removeDetachListener = magicalDomThingy.addDomApiDetachListener(domApi => {
+const removeDetachListener = stateWatcher.addDomApiDetachListener(domApi => {
 	domApi.get() // the final state, presumably!
 })
 
